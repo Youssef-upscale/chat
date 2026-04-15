@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Widget Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .demo-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        .instructions {
+            text-align: left;
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        code {
+            background: #e5e7eb;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="demo-card">
+        <h1>Chat Widget Demo</h1>
+        <p>This is a single-file, embeddable chat widget with a modular component structure behind the scenes.</p>
+
+        <div class="instructions">
+            <strong>Testing & Cleanup:</strong>
+            <ul>
+                <li>Open this file in an browser to test the widget.</li>
+                <li><strong>widget.js</strong> is the only file you need to embed.</li>
+                <li>You can safely delete <code>widget.css</code> and <code>build.js</code>.</li>
+                <li>Keep the <code>src/</code> directory for development/customization.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 
+      EMBED THE WIDGET 
+      All styles and logic are contained within this single file.
+    -->
+    <script src="./widget.js" data-backend-url="http://localhost:5678/webhook-test/chat" data-primary-color="#1f2937"
+        data-bot-name="Attista AI" data-bot-avatar="🤖" data-welcome-msg="👋 Hi hello"
+        data-position="bottom-right" data-site-id="http://127.0.0.1:5500/">
+        </script>
+
+</body>
+
+</html>
